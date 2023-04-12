@@ -17,6 +17,11 @@ header {
     height: 100px;
 }
 
+main {
+    height: 100%;
+    width: 100%;
+}
+
 .container-text {
     display: flex;
     width: 100%;
@@ -24,9 +29,9 @@ header {
     height: 840px;
     width: 400px;
     flex-direction: column;
-    position: absolute;
+    position: relative;
     left: 1500px;
-    bottom: 60px;
+    bottom: 860px;
     background-color: white;
     border-radius: 32px;
 }
