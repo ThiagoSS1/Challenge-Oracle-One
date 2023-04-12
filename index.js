@@ -59,7 +59,6 @@ function showValueDecrypt () {
     let div = document.querySelector('.container-text');
     div.innerText = decrypt(getValue());
     divRef.appendChild(btnThreeRef)
-    divRef.classList.add('container-text-btn');
 }
 
 function showValue () {

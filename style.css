@@ -18,6 +18,8 @@ header {
 }
 
 main {
+    display: flex;
+    flex-direction: column;
     height: 100%;
     width: 100%;
 }
@@ -31,18 +33,9 @@ main {
     flex-direction: column;
     position: relative;
     left: 1500px;
-    bottom: 860px;
+    bottom: 75px;
     background-color: white;
     border-radius: 32px;
-}
-
-.container-text img {
-    width: 360px;
-    height: 300px;
-    margin: 170px 0 32px 20px;
-}
-
-.container-text {
     text-align: left;
     padding: 40px 40px 40px 40px;
     font-family: inherit;
@@ -50,6 +43,19 @@ main {
     line-height: 24px;
     font-style: regular;
     font-size: 18px;
+}
+
+.container-text img {
+    width: 336px;
+    height: 300px;
+    margin: 0;
+    
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    margin-top:100px ;
 }
 
 .text {
@@ -80,7 +86,9 @@ h3 {
 .input {
     width: 680px;
     height: 48px;
-    margin: 200px 0 0 250px;
+    margin: 0px 0 0 250px;
+    position: relative;
+    top: 200px;
 }
 
 input {
@@ -105,7 +113,9 @@ input:focus {
     display: flex;
     width: 350px;
     height: 38px;
-    margin: 540px 0 0 255px;
+    margin: 0 0 0 255px;
+    position: relative;
+    top: 585px;
 }
 
 .paragrafo p {
@@ -118,6 +128,8 @@ input:focus {
     margin: 0 0 10px 250px;
     display: flex;
     justify-content: space-between;
+    position: relative;
+    top: 600px;
 }
 
 button {
@@ -130,7 +142,8 @@ button {
 #btn-three {
     display: none;
     position: relative;
-    top: 650px;
+    top: 540px;
+    margin: 0 auto;
 }
 
 
