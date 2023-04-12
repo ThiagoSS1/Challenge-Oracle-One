@@ -33,7 +33,7 @@ main {
     flex-direction: column;
     position: relative;
     left: 1500px;
-    bottom: 75px;
+    bottom: 61px;
     background-color: white;
     border-radius: 32px;
     text-align: left;
@@ -141,8 +141,8 @@ button {
 
 #btn-three {
     display: none;
-    position: relative;
-    top: 540px;
+    position: absolute;
+    top: 580px;
     margin: 0 auto;
 }
 

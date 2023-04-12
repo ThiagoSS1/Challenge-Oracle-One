@@ -8,7 +8,6 @@ const divRef = document.querySelector('.container-text');
 const btnThreeRef = document.querySelector('#btn-three');
 
 let getInput = function () {
-    console.log(inputRef.value);
     return inputRef.value;
 }
 
@@ -16,8 +15,8 @@ let getValue = function () {
     const pRef = document.querySelector('.container-text');
     const encrypted = pRef.innerText;
     const decrypted = decrypt(encrypted);
-    let result = decrypted.replace("Copiar", "")
-    return result;
+    const textWithoutCopy = decrypted.replace('Copiar', '').trim();
+    return textWithoutCopy;
 }
 
 btnRef.addEventListener('click', function () {
@@ -25,12 +24,14 @@ btnRef.addEventListener('click', function () {
     hide()
     showValue()
     showButton()
-    removeElement()
 });
 
 btnTwoRef.addEventListener('click', function () {
-    getValue();
-    showValueDecrypt()
+    const input = getInput();
+    if (input) {
+        getValue();
+        showValueDecrypt()
+    }
 })
 
 btnThreeRef.addEventListener('click', clipboard)
@@ -41,17 +42,9 @@ function hide () {
     paragraphRef.style.display = 'none';
 }
 
+
 function showButton () {
     btnThreeRef.style.display = 'block';
-}
-
-
-function removeElement () {
-    const div = document.querySelector('.text');
-
-    if (div) {
-        div.remove();
-    }
 }
 
 
@@ -69,9 +62,12 @@ function showValue () {
 
 function clipboard () {
     const textToCopy = document.querySelector('.container-text').innerText;
-    const removeLetter = textToCopy.replace("Copiar", "")
-    navigator.clipboard.writeText(removeLetter)
+    const textWithoutCopy = textToCopy.replace('Copiar', '').trim();
+    navigator.clipboard.writeText(textWithoutCopy);
 }
+
+
+
 
 function encrypt (word) {
     const map = {
