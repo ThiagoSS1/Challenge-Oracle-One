@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    width: 100%;
+    background-color: #F3F5FC;
+}
+
+header {
+    background-color: #0A3871;
+    width: 100%;
+    height: 100px;
+}
+
+.container-text {
+    display: flex;
+    width: 100%;
+    background-color: #0A3871;
+    height: 840px;
+    width: 400px;
+    flex-direction: column;
+    position: absolute;
+    left: 1500px;
+    bottom: 60px;
+    background-color: white;
+    border-radius: 32px;
+}
+
+.container-text img {
+    width: 360px;
+    height: 300px;
+    margin: 170px 0 32px 20px;
+}
+
+.container-text {
+    text-align: left;
+    padding: 40px 40px 40px 40px;
+    font-family: inherit;
+    font-weight: 400;
+    line-height: 24px;
+    font-style: regular;
+    font-size: 18px;
+}
+
+.text {
+    width: 250px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+}
+
+h3 {
+    margin-bottom: 30px;
+}
+
+.image img {
+    width: 120px;
+    height: 48px;
+    margin: 40px 0 40px 40px;
+}
+
+
+.img {
+    width: 16px;
+    height: 16px;
+}
+
+.input {
+    width: 680px;
+    height: 48px;
+    margin: 200px 0 0 250px;
+}
+
+input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: #F3F5FC;
+    caret-color: rgb(2, 10, 124);
+    font-size: 32px;
+}
+
+input::placeholder {
+    color: #0A3871;
+    font-size: 32px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.paragrafo {
+    display: flex;
+    width: 350px;
+    height: 38px;
+    margin: 540px 0 0 255px;
+}
+
+.paragrafo p {
+    margin: 0 0 0 10px;
+}
+
+.container-btn {
+    width: 680px;
+    height: 67px;
+    margin: 0 0 10px 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    border: none;
+}
+
+#btn-three {
+    display: none;
+    position: relative;
+    top: 650px;
+}
+
+
+.btn-one {
+    background-color: #0A3871;
+    color: #F3F5FC;
+    font-size: 18px;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-one:active {
+    transform: scale(0.95) translateY(2px);
+
+}
+
+
+.btn-two {
+    background-color: #D8DFE8;
+    color: #0A3871;
+    font-size: 18px;
+}
