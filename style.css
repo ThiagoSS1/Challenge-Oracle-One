@@ -115,7 +115,7 @@ input:focus {
     height: 38px;
     margin: 0 0 0 255px;
     position: relative;
-    top: 770px;
+    top: 650px;
 }
 
 .paragrafo p {
@@ -129,7 +129,7 @@ input:focus {
     display: flex;
     justify-content: space-between;
     position: relative;
-    top: 760px;
+    top: 650px;
 }
 
 button {
@@ -142,7 +142,7 @@ button {
 #btn-three {
     display: none;
     position: absolute;
-    top: 735px;
+    top: 645px;
     margin: 0 auto;
 }
 
