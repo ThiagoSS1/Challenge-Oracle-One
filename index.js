@@ -42,11 +42,9 @@ function hide () {
     paragraphRef.style.display = 'none';
 }
 
-
 function showButton () {
     btnThreeRef.style.display = 'block';
 }
-
 
 function showValueDecrypt () {
     let div = document.querySelector('.container-text');
@@ -66,9 +64,6 @@ function clipboard () {
     navigator.clipboard.writeText(textWithoutCopy);
 }
 
-
-
-
 function encrypt (word) {
     const map = {
         'e': 'enter',
@@ -78,7 +73,6 @@ function encrypt (word) {
         'u': 'ufat',
     }
 
-
     const normalizedWord = word.toLowerCase();
     let encryptedWord = '';
 
@@ -86,11 +80,8 @@ function encrypt (word) {
         const encryptedLetter = map[letter];
         encryptedWord += encryptedLetter || letter;
     }
-    console.log("chamou", encryptedWord);
     return encryptedWord;
-
 }
-
 
 function decrypt (word) {
     const map = {
@@ -107,6 +98,5 @@ function decrypt (word) {
     for (const chunk of chunks) {
         decrypted += map[chunk] || chunk;
     }
-    console.log("chamou2", decrypted);
     return decrypted;
 }
